@@ -1,13 +1,14 @@
 # Assignment Future Skill
 
 1. How can you implement shared functionality across a component tree?
+   
 Answer: There are multiple ways to implement shared functionality across a component tree in React such as Context Api, Custom Hooks, HOCs
         Among these I have used Context Api in the project.
 
 2. Why is the useState hook appropriate for handling state in a complex component?
 
 Answer: Local State Management: useState allows us to handle state directly in functional components.
-    Encapsulation: It keeps state logic within the component, making it easier to understand and manage, especially when dealing with complex state interactions.
+        Encapsulation: It keeps state logic within the component, making it easier to understand and manage, especially when dealing with complex state                     interactions.
 
 ## Overview
 
@@ -29,30 +30,39 @@ This project is a Help Center application built using the MERN stack (MongoDB, E
 
 ### Backend Setup
 
-1. Navigate to the root directory
+1. Navigate to the backend directory:
+   ```
+   cd backend
+   ```
 
 2. Install the required packages:
     ```
+    
     npm install
 
     ```
 
-3. Create a `.env` file in the `server` directory and add your MongoDB connection string:
+3. Create a data folder in root directory and a `config.env` file in the data directory and add your MongoDB connection string:
     ```env
     MONGO_URI=your_mongodb_connection_string
     ```
 
 4. Start the backend server:
     ```bash
+    
     npm start
     ```
 
 ### Frontend Setup
 
-1. Navigate to the root directory
+1. Navigate to the root directory:
+   ```
+   cd frontend
+   ```
 
 2. Install the required packages:
     ```
+    
     npm install
     ```
 
