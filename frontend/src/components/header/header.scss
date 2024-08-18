@@ -1,0 +1,31 @@
+@import '../../mixins.scss';
+
+.header_container{
+    @include flex-container(row, space-between, center);
+    background-color: var(--primary-color);
+    color: white;
+    height: 8vh;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+
+    .header_desc{
+        @include flex-container(row, center, center);
+        gap: 0.5rem;
+
+        .header_logo{
+            @include background-cover('../../assets/Logo.png');
+            height : 22px;
+            width: 22px;
+            @include rounder-border(8px );
+        }
+    }
+    .header_button{
+        padding: 0.4rem;
+        box-sizing: border-box;
+        @include rounder-border(5px, white);
+        background-color: var(--primary-color);
+        color: white;
+        margin-right: 15% ;
+    }
+}

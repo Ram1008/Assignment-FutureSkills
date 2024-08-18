@@ -1,0 +1,41 @@
+@import '../../mixins';
+
+.home_head {
+    @include flex-container(column, center, center);
+    background-color: var(--secondary-color);
+    padding: 3rem 0 4rem 0;
+    box-sizing: border-box;
+    gap: 1rem;
+
+    h1 {
+        margin: 0;
+        font-size: 50px;
+        font-weight: 500;
+    }
+}
+
+.home_body {
+    width: 60%;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 5rem 0;
+
+    .home_card-container {
+        @include flex-container(row, center);
+        flex-flow: row wrap;
+        gap: 5rem;
+    }
+    
+    @media (max-width: 1200px) {
+        width: 70%; 
+        padding: 4rem 0; 
+
+    }
+    @media (max-width: 1000px) {
+        width: 80%; 
+    }
+
+}
+
+
+

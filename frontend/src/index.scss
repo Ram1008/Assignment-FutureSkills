@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #000101;
+  --secondary-color: #dadbf0;
+  --light-secondary-color: #f5f6f9;
+  --text-color: #666b6d;
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

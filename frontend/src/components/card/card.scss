@@ -1,0 +1,30 @@
+@import '../../mixins';
+
+.card_container{
+    @include flex-container(column, flex-start);
+    @include rounder-border(10px,var(--secondary-color));
+    background-color: var(--light-secondary-color);
+    cursor: pointer;
+    width: 41%;
+
+    h3{
+        margin: 0.5rem 1rem 2px 1rem;
+        font-size: 17px;
+        padding-right: 2rem;
+        box-sizing: border-box;
+
+    }
+    hr {
+        border: none;
+        border-top: 1px solid var(--secondary-color);
+        margin: 0;
+    }
+    p{
+        margin: 0.5rem 1rem 1rem 1rem;
+        font-weight: 500;
+        font-size: 15px;
+        color: var(--text-color);
+        padding-right: 2rem;
+        box-sizing: border-box;
+    }
+}

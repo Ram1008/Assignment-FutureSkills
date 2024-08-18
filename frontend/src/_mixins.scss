@@ -1,0 +1,21 @@
+  @mixin flex-container($direction: row, $justify: flex-start, $align: stretch) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+  
+  @mixin background-cover($url) {
+    background-image: url($url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+ 
+  @mixin rounder-border($radius : null, $color: null) {
+    border: 1px solid if($color != null, $color, transparent);
+    border-radius: if($radius != null, $radius, 0px);
+  }
+  
+
+  
